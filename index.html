@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="icons/app-icon.png" type="image/png">
+    <link rel="icon" href="icons/app-icon.svg" type="image/svg+xml">
     <link rel="manifest" href="site.webmanifest">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -18,7 +19,9 @@
   <body>
     <header class="site-header">
       <nav class="nav container">
-        <a class="logo" href="index.html">quali<span>.chat</span></a>
+        <a class="logo" href="index.html" aria-label="quali.chat home">
+          <img class="logo-mark" src="icons/app-icon.png" alt="" width="28" height="28" loading="eager">quali<span>.chat</span>
+        </a>
         <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -247,11 +250,13 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-brand">
-          <a class="logo" href="index.html">quali<span>.chat</span></a>
+          <a class="logo" href="index.html" aria-label="quali.chat home">
+            <img class="logo-mark" src="icons/app-icon.png" alt="" width="28" height="28" loading="lazy">quali<span>.chat</span>
+          </a>
           <p class="tiny">© 2024 quali.chat. All rights reserved.</p>
           <div class="app-icons">
             <img src="icons/icon-64.png" alt="quali.chat icon" width="32" height="32" loading="lazy">
-            <img src="icons/icon-128.png" alt="quali.chat icon" width="32" height="32" loading="lazy">
+            <img src="icons/app-icon.png" alt="quali.chat icon" width="32" height="32" loading="lazy">
           </div>
         </div>
         <nav class="footer-nav">

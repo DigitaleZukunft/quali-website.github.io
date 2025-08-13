@@ -72,9 +72,28 @@ p { margin: 0 0 14px; }
   letter-spacing: 0.2px;
   color: var(--text);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .logo span { color: var(--primary); }
+
+/* Logo mark image next to wordmark */
+.logo .logo-mark { width: 22px; height: 22px; display: inline-block; object-fit: contain; }
+
+/* Logo mark integration */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  /* gap: 10px; */
+}
+
+.logo img.logo-mark {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+}
 
 .nav-links {
   display: flex;

@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>quali.chat — Web login</title>
+    <link rel="icon" href="icons/app-icon.png" type="image/png">
+    <link rel="icon" href="icons/app-icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <style>
       main { min-height: 70vh; display: grid; place-items: center; }
@@ -17,7 +19,9 @@
   <body>
     <header class="site-header">
       <nav class="nav container">
-        <a class="logo" href="/">quali<span>.chat</span></a>
+        <a class="logo" href="/" aria-label="quali.chat home">
+          <img class="logo-mark" src="icons/app-icon.png" alt="" width="28" height="28" loading="eager">quali<span>.chat</span>
+        </a>
       </nav>
     </header>
     <main class="container">
@@ -34,7 +38,9 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-brand">
-          <a class="logo" href="/">quali<span>.chat</span></a>
+          <a class="logo" href="/" aria-label="quali.chat home">
+            <img class="logo-mark" src="icons/app-icon.png" alt="" width="28" height="28" loading="lazy">quali<span>.chat</span>
+          </a>
           <p class="tiny">© 2024 quali.chat. All rights reserved.</p>
         </div>
       </div>
