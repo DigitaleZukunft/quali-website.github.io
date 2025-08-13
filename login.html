@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>quali.chat — Web login</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      main { min-height: 70vh; display: grid; place-items: center; }
+      .card { max-width: 520px; width: 100%; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 22px; box-shadow: var(--shadow); }
+      .card h1 { font-size: 24px; margin-bottom: 8px; }
+      .providers { display: grid; gap: 10px; margin-top: 14px; }
+      .providers .btn { width: 100%; justify-content: center; }
+      .tiny-muted { color: var(--muted); font-size: 12px; margin-top: 10px; }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="/">quali<span>.chat</span></a>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="card">
+        <h1>Web login</h1>
+        <p class="lead">Connect your wallet to continue. This is a static demo screen.</p>
+        <div class="providers">
+          <button class="btn btn-primary">Connect Wallet</button>
+          <button class="btn">Continue with Email</button>
+        </div>
+        <p class="tiny-muted">We never take custody of your assets.</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a class="logo" href="/">quali<span>.chat</span></a>
+          <p class="tiny">© 2024 quali.chat. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </html>
+
+

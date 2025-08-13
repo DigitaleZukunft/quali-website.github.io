@@ -150,6 +150,13 @@ p { margin: 0 0 14px; }
   font-size: 12px;
 }
 
+.chip small {
+  font-size: 10px;
+  font-weight: 600;
+  opacity: 0.8;
+  margin-left: 4px;
+}
+
 .hero {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
