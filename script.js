@@ -2,12 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
   const body = document.body;
+  const navCtas = document.querySelector('.nav-cta');
 
   if (navToggle && navLinks) {
     navToggle.addEventListener('click', () => {
       const isOpen = navLinks.classList.toggle('show');
       navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       body.style.overflow = isOpen ? 'hidden' : '';
+      if (navCtas) {
+        navCtas.style.display = isOpen ? 'none' : '';
+      }
     });
 
     // Close menu on link click and restore scroll

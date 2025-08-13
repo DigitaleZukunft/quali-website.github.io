@@ -359,6 +359,8 @@ p { margin: 0 0 14px; }
   .nav-links.show { display: flex; flex-direction: column; gap: 12px; }
   .nav-toggle { display: inline-flex; }
   .nav-cta { display: none; }
+  .nav-cta-mobile { display: block; }
+  .nav-cta-mobile .btn { width: 100%; justify-content: center; }
   /* Show CTAs inside the mobile dropdown when open */
   .nav-links.show ~ .nav-cta {
     display: flex;
