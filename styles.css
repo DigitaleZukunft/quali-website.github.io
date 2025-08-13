@@ -336,6 +336,7 @@ p { margin: 0 0 14px; }
   .nav-links { display: none; position: absolute; top: 72px; left: 0; right: 0; padding: 16px clamp(20px, 6vw, 28px); background: rgba(11, 15, 20, 0.96); border-bottom: 1px solid var(--border); }
   .nav-links.show { display: flex; flex-direction: column; gap: 12px; }
   .nav-links.show button.btn { width: 100%; justify-content: center; }
+  .nav-links.show a.btn { width: 100%; justify-content: center; display: inline-flex; }
   .nav-toggle { display: inline-flex; }
   .nav-cta { display: none; }
   .nav-cta-mobile { display: block; }
@@ -358,6 +359,7 @@ p { margin: 0 0 14px; }
   .bubble-list .bubble { width: 100%; text-align: center; }
   .cta-row { justify-content: center; }
   .callout-with-phone { grid-template-columns: 1fr; }
+  .callout .btn { width: 100%; display: inline-flex; justify-content: center; }
 }
 
 /* Focus styles for accessibility */
