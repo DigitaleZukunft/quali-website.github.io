@@ -355,6 +355,9 @@ p { margin: 0 0 14px; }
   .lead { font-size: 16px; }
   .hero-art { min-height: 180px; }
   .orb { filter: blur(28px); }
+  .bubble-list .bubble { width: 100%; text-align: center; }
+  .cta-row { justify-content: center; }
+  .callout-with-phone { grid-template-columns: 1fr; }
 }
 
 /* Focus styles for accessibility */
@@ -433,6 +436,7 @@ p { margin: 0 0 14px; }
   display: flex;
   align-items: center;
   gap: 10px;
+  min-height: 44px;
 }
 .accordion .accordion-content { margin-top: 8px; color: var(--muted); }
 .placeholder-media { height: 140px; border-radius: 12px; background: linear-gradient(135deg, rgba(124,92,255,.12), rgba(0,230,179,.12)); border: 1px solid var(--border); display: grid; place-items: center; color: var(--muted); font-weight: 600; }
