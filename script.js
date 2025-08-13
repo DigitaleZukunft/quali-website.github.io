@@ -1,11 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
+  const body = document.body;
 
   if (navToggle && navLinks) {
     navToggle.addEventListener('click', () => {
       const isOpen = navLinks.classList.toggle('show');
       navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    // Close menu on link click and restore scroll
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navLinks.classList.contains('show')) {
+          navLinks.classList.remove('show');
+          navToggle.setAttribute('aria-expanded', 'false');
+          body.style.overflow = '';
+        }
+      });
     });
   }
 
@@ -39,6 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
     el.style.transform = 'translateY(12px)';
     observer.observe(el);
   });
+
+  // Respect prefers-reduced-motion for initial reveal states
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.feature, .usecase, .steps li, .callout, .glass-card').forEach(el => {
+      el.style.transition = 'none';
+      el.classList.add('reveal');
+    });
+  }
 });
 
 const style = document.createElement('style');
