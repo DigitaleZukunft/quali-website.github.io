@@ -112,6 +112,9 @@ p { margin: 0 0 14px; }
 
 .nav-links a:hover { color: var(--text); }
 .nav-links button.btn { border: 1px solid var(--border); }
+/* Normalize button styling for anchor vs button in header */
+.nav-links a.btn { border: 1px solid var(--border); text-decoration: none; color: var(--text); }
+.nav-links a.btn, .nav-links button.btn { display: inline-flex; align-items: center; justify-content: center; line-height: 1; font-weight: 600; }
 
 .nav-cta { display: flex; gap: 12px; }
 
@@ -144,6 +147,7 @@ p { margin: 0 0 14px; }
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
   min-height: 44px;
+  line-height: 1;
 }
 
 .btn:hover {
