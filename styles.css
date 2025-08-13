@@ -178,6 +178,31 @@ p { margin: 0 0 14px; }
 
 .chains { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
 
+  .store-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 12px 0 6px;
+    align-items: center;
+  }
+
+  .store-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text);
+    border: 1px solid var(--border);
+    background: var(--surface);
+  }
+
+  .store-badge small { display: block; font-size: 10px; color: var(--muted); line-height: 1; }
+  .store-badge strong { display: block; font-size: 14px; line-height: 1.1; }
+  .store-logo { width: 22px; height: 22px; }
+  .btn-login { margin-left: 4px; }
+
 .hero-art { position: relative; min-height: 360px; }
 
 .orb {
@@ -270,6 +295,7 @@ p { margin: 0 0 14px; }
 .footer-nav a:hover { color: var(--text); }
 .socials { display: flex; gap: 8px; }
 .social { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border: 1px solid var(--border); border-radius: 10px; color: var(--muted); text-decoration: none; }
+.app-icons { display: flex; gap: 6px; margin-top: 8px; opacity: 0.8; }
 
 /* Responsive */
 @media (max-width: 960px) {
