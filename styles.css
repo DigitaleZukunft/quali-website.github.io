@@ -111,6 +111,7 @@ p { margin: 0 0 14px; }
 }
 
 .nav-links a:hover { color: var(--text); }
+.nav-links button.btn { border: 1px solid var(--border); }
 
 .nav-cta { display: flex; gap: 12px; }
 
@@ -217,29 +218,6 @@ p { margin: 0 0 14px; }
 
 .chains { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
 
-  .store-row {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin: 12px 0 6px;
-    align-items: center;
-  }
-
-  .store-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 14px;
-    border-radius: 12px;
-    text-decoration: none;
-    color: var(--text);
-    border: 1px solid var(--border);
-    background: var(--surface);
-  }
-
-  .store-badge small { display: block; font-size: 10px; color: var(--muted); line-height: 1; }
-  .store-badge strong { display: block; font-size: 14px; line-height: 1.1; }
-  .store-logo { width: 22px; height: 22px; }
   .btn-login { margin-left: 4px; }
 
 .hero-art { position: relative; min-height: 360px; }
@@ -357,6 +335,7 @@ p { margin: 0 0 14px; }
 @media (max-width: 720px) {
   .nav-links { display: none; position: absolute; top: 72px; left: 0; right: 0; padding: 16px clamp(20px, 6vw, 28px); background: rgba(11, 15, 20, 0.96); border-bottom: 1px solid var(--border); }
   .nav-links.show { display: flex; flex-direction: column; gap: 12px; }
+  .nav-links.show button.btn { width: 100%; justify-content: center; }
   .nav-toggle { display: inline-flex; }
   .nav-cta { display: none; }
   .nav-cta-mobile { display: block; }
@@ -391,5 +370,84 @@ p { margin: 0 0 14px; }
 [id] { scroll-margin-top: 88px; }
 
 .tiny { color: var(--muted); font-size: 12px; }
+
+/* Bubble list for features */
+.bubble-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 0 0 10px;
+}
+.bubble-list .bubble {
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--glass);
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Phone mock */
+.callout-with-phone { grid-template-columns: 1.2fr 0.8fr; }
+.phone-mock {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 9/19.5;
+  margin: 0 auto;
+  border-radius: 32px;
+  background: radial-gradient(120px 120px at 70% 20%, rgba(124,92,255,.35), transparent), var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 60px rgba(0,0,0,.45);
+  display: grid;
+  place-items: center;
+}
+.phone-mock.glow {
+  background: radial-gradient(140px 140px at 60% 40%, rgba(0,230,179,.35), transparent), var(--surface);
+}
+.phone-screen {
+  width: 88%;
+  height: 88%;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(124,92,255,.15), rgba(255,92,243,.12));
+  border: 1px solid var(--border);
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+/* Accordion styles */
+.accordion details {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+.accordion summary {
+  cursor: pointer;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.accordion .accordion-content { margin-top: 8px; color: var(--muted); }
+.placeholder-media { height: 140px; border-radius: 12px; background: linear-gradient(135deg, rgba(124,92,255,.12), rgba(0,230,179,.12)); border: 1px solid var(--border); display: grid; place-items: center; color: var(--muted); font-weight: 600; }
+
+/* Colored buttons for use-cases */
+.btn-purple { background: linear-gradient(135deg, rgba(124,92,255,.25), rgba(124,92,255,.15)); border-color: rgba(124,92,255,.35); }
+.btn-green { background: linear-gradient(135deg, rgba(0,230,179,.25), rgba(0,230,179,.15)); border-color: rgba(0,230,179,.35); }
+.btn-pink { background: linear-gradient(135deg, rgba(255,92,243,.25), rgba(255,92,243,.15)); border-color: rgba(255,92,243,.35); }
+.btn-blue { background: linear-gradient(135deg, rgba(80,150,255,.25), rgba(80,150,255,.15)); border-color: rgba(80,150,255,.35); }
+.btn-yellow { background: linear-gradient(135deg, rgba(255,210,0,.25), rgba(255,210,0,.15)); border-color: rgba(255,210,0,.35); color: #0b0f14; }
+.btn-teal { background: linear-gradient(135deg, rgba(0,200,255,.25), rgba(0,200,255,.15)); border-color: rgba(0,200,255,.35); }
+
+/* Brighter ENS callout */
+.callout-bright {
+  background: linear-gradient(135deg, rgba(124,92,255,0.25), rgba(0,230,179,0.22));
+}
 
 

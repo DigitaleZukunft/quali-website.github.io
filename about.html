@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0f14">
+    <title>About – quali.chat</title>
+    <meta name="description" content="About quali.chat – token-gated chats for real communities.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="icons/app-icon.png" type="image/png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .about-hero { padding: 56px 0 24px; }
+      .about-hero h1 { font-size: clamp(30px, 5vw, 44px); }
+      .about-sub { color: var(--muted); font-size: 18px; }
+      .bubble-values { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0 0; padding: 0; list-style: none; }
+      .bubble-values li { padding: 10px 14px; border-radius: 999px; border: 1px solid var(--border); background: var(--glass); }
+      .about-img { display: grid; place-items: center; margin: 24px 0; }
+      .about-phone { width: 320px; max-width: 90%; }
+      .about-section { padding: 48px 0; }
+      .accordion details { background: var(--surface); }
+      .center-row { display: flex; gap: 12px; justify-content: center; }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="index.html" aria-label="quali.chat home">
+          <img class="logo-mark" src="icons/app-icon.png" alt="" width="28" height="28" loading="eager">quali<span>.chat</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="about.html">About</a></li>
+          <li><button class="btn" data-action="demo">Watch demo</button></li>
+          <li><button class="btn btn-primary" data-action="connect">Connect wallet</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container about-hero">
+        <h1>About Quali.chat</h1>
+        <p class="about-sub">A community needs real voices.</p>
+        <p>Quali.chat was created to solve one of the biggest problems in online communities: noise. Too often, genuine members and meaningful conversations are lost in a sea of spam, bots, raiders, and low-effort chatter. Our goal is to give Web3 communities a space where only verified token-holding members can participate, creating a higher-quality environment for discussion, collaboration and growth.</p>
+        <p>We use token-gating to make that possible. By verifying ownership of NFTs or fungible tokens instantly on-chain, Quali.chat ensures that every participant has a genuine stake in the community. This keeps standards high, protects against bad actors and makes it easy for trusted members to connect.</p>
+        <p>Our platform is built for flexibility. Communities can set their own access rules, support multiple blockchains and keep control of their identity and privacy. From investor groups and DAOs to creators, event organisers and real-world meetups, Quali.chat adapts to the way you work.</p>
+        <div class="about-img">
+          <div class="phone-mock" aria-hidden="true"><div class="phone-screen">App preview</div></div>
+        </div>
+      </section>
+
+      <section class="container about-section">
+        <h2 class="section-title">Our Mission</h2>
+        <p>Quali.chat is more than a chat tool. It is an infrastructure for stronger, safer and more engaged communities.</p>
+        <h3 style="margin-top:14px;">What we value</h3>
+        <ul class="bubble-values">
+          <li>Trust – Every member is verified, creating spaces where people can speak openly.</li>
+          <li>Simplicity – Connecting and joining conversations should be instant and intuitive.</li>
+          <li>Privacy – Your data and your conversations remain yours.</li>
+          <li>Freedom – Communities decide their own rules, tokens and thresholds.</li>
+        </ul>
+      </section>
+
+      <section class="container about-section">
+        <h2 class="section-title">Is My Wallet Safe if I Connect?</h2>
+        <p>Yes. Quali.chat is designed to verify token ownership without ever taking control of your wallet or assets.</p>
+        <ul>
+          <li>Read-only connection: We only check for token balances and never request permission to move, sell or transfer your assets.</li>
+          <li>No custody: Your tokens stay in your wallet at all times.</li>
+          <li>Secure standards: We use trusted wallet providers such as MetaMask, Phantom and WalletConnect, following industry-standard security protocols.</li>
+          <li>No hidden actions: You will never be asked to sign a transaction that moves funds or changes wallet permissions.</li>
+          <li>Privacy first: We do not store your private keys or sensitive wallet data.</li>
+        </ul>
+        <p>Connecting your wallet to Quali.chat is as safe as checking your balance through a trusted blockchain explorer. You remain in full control at all times.</p>
+        <div class="center-row">
+          <a class="btn btn-primary" href="login.html">Get started</a>
+        </div>
+      </section>
+
+      <section class="container about-section">
+        <h2 class="section-title">How does it work?</h2>
+        <p>Quali.chat combines simple setup with powerful on-chain verification. You decide who can join your conversations, and our platform does the rest.</p>
+        <div class="accordion" style="margin-top:10px;">
+          <details>
+            <summary>1. Connect your wallet</summary>
+            <div class="accordion-content">
+              <p>Link any supported wallet. We work with major blockchains including Ethereum, Solana, BSC, Polygon and Base.</p>
+            </div>
+          </details>
+          <details>
+            <summary>2. Set your rules</summary>
+            <div class="accordion-content">
+              <p>Choose which NFTs or fungible tokens grant access. You can set flexible thresholds or mix different collections to suit your community.</p>
+            </div>
+          </details>
+          <details>
+            <summary>3. Automatic access</summary>
+            <div class="accordion-content">
+              <p>Members who meet your criteria join instantly. No manual approvals, spreadsheets or admin bottlenecks.</p>
+            </div>
+          </details>
+          <details>
+            <summary>4. Private, encrypted spaces</summary>
+            <div class="accordion-content">
+              <p>Every room is fully encrypted and member-only. We do not store, sell or share your data.</p>
+            </div>
+          </details>
+        </div>
+        <div class="about-img">
+          <div class="phone-mock glow" aria-hidden="true"><div class="phone-screen">Wallet → App</div></div>
+        </div>
+        <div class="center-row">
+          <a class="btn btn-primary" href="login.html">Get started</a>
+        </div>
+      </section>
+
+      <section class="container about-section">
+        <h2 class="section-title">FAQ / Contact Support</h2>
+        <div class="faq">
+          <details>
+            <summary>How are tokens verified?</summary>
+            <p>We read directly from chain RPCs or indexers and cache proofs securely. No custody of your assets.</p>
+          </details>
+          <details>
+            <summary>Which wallets are supported?</summary>
+            <p>We aim to support major wallets on each chain. If your favorite is missing, tell us.</p>
+          </details>
+          <details>
+            <summary>Need help?</summary>
+            <p>Contact support at support@quali.chat.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a class="logo" href="index.html" aria-label="quali.chat home">
+            <img class="logo-mark" src="icons/app-icon.png" alt="" width="28" height="28" loading="lazy">quali<span>.chat</span>
+          </a>
+          <p class="tiny">© 2024 quali.chat. All rights reserved.</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="index.html#faq">Support</a>
+          <a href="terms.html">Terms of Use</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="acceptable-use.html">Acceptable Use</a>
+          <a href="copyright.html">Copyright</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
